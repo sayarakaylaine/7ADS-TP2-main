@@ -13,6 +13,11 @@
           href="https://suap.ifro.edu.br/static/comum/img/favicon.png?v=fb93eb95141192c586d0251d4beb9dd5">
      <link href="confirmar_arquivos/main_default.css" rel="stylesheet" type="text/css" media="all">
      <link href="confirmar_arquivos/anonima.css" rel="stylesheet" type="text/css" media="all">
+     <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-d...==" crossorigin="anonymous" referrerpolicy="no-referrer"
+  />
      <script type="text/javascript" async="" charset="utf-8" src="confirmar_arquivos/recaptcha__pt_br.js"
           crossorigin="anonymous"
           integrity="sha384-YmsjtNSXSC5UUqaNxBAO2JV9TdaM7hyKKcXkxJ2sc6KLG4gyzWIvye+AHK3Gee1p"></script>
@@ -122,14 +127,15 @@
                          <div class="form-row email telefone ">
                               <div class="field-box field-box-first required"><label for="id_email"
                                         title="Preenchimento obrigatório">E-mail:</label><input type="email"
-                                        name="email" maxlength="320" id="id_email"></div>
+                                        name="email" maxlength="320" id="id_email" required>
+                                   </div>
 
                          </div>
 
                          <div class="form-row cpf ">
                               <div class="field-box-first"><label for="id_cpf">CPF:</label><input type="text"
                                         autocomplete="off" name="cpf" class="br-cpf-widget" size="14" maxlength="14"
-                                        id="id_cpf" placeholder=" ">
+                                        id="id_cpf"  required>
                                    <p class="help">Formato: "XXX.XXX.XXX-XX"</p>
                               </div>
                          </div>
@@ -148,23 +154,13 @@
                                                        <h5 class="mt-0 text-transform-none"><input type="checkbox"
                                                                  autocomplete="off" name="atividades" value="1599" title="Selecionar palestra"
                                                                  id="id_atividades_0"><strong
-                                                                 class="ps-2"> Slide da Palestra</strong>
+                                                                 class="ps-2"> Material do Minicurso</strong>
                                                             
                                                        </h5>
                                                        <p class="true">Apresentação sobre Cibersegurança</p>
-                                                       <p>CURSO 8: TEMA - TÓPICOS ESPECIAS II (Minicurso de 1:00h)</p>
+                                                       <p>VOCÊ SERIA HACKEADO EM 5 MINUTOS? DESCUBRA AGORA (Minicurso de 3:00h)</p>
                                                   </div>
-                                                  <div class="box-item">
-                                                       <h5 class="mt-0 text-transform-none"><input type="checkbox"
-                                                                 autocomplete="off" name="atividades" value="1600" title="Selecionar palestra"
-                                                                 id="id_atividades_1"><strong
-                                                                 class="ps-2"> Palestra</strong>
-                                                            às 21:00
-                                                       </h5>
-                                                       <p class="true">270 vaga(s) remanescente(s)</p>
-                                                       <p>PALESTRA 2: TEMA - ALGORITIMOS II. POO. MATEMATICA. INGLES
-                                                            (Palestra de 1:00h)</p>
-                                                  </div>
+                                                  
                                              </div>
                                         </div>
                                    </div>
@@ -191,10 +187,8 @@
           <footer class="login-footer">
                <div class="wrapper">
                     <div class="button-services d-none d-md-flex"><button class="title" id="buttonServices"
-                              type="button">Serviços essenciais</button></div>
-                    <div class="button-services d-md-none">
-                         <h2 class="title">Serviços essenciais</h2>
-                    </div>
+                         type="button">Serviços essenciais</button></div>
+                    
                     <ul class="_main_menu">
                          <li class="_menu_group"><span class="_menu_subtitle">Acessos</span>
                               <ul class="_menu_subgroup">
