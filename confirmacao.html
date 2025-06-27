@@ -88,20 +88,31 @@
           </footer>
      </div>
      
-     <script>
-          // Simular download automático (substitua pelos arquivos reais)
+     <script>// mudar link do slide à ser baixado
           document.addEventListener('DOMContentLoaded', function() {
+               const downloadURL = 'https://drive.google.com/uc?export=download&id=17WtllirUd4UGcBpSIoMv4D1g4xcTIS0o';
+
                setTimeout(function() {
                     console.log('Iniciando download automático...');
-                    // Aqui você colocaria o código para iniciar os downloads
+                    const link = document.createElement('a');
+                    link.href = downloadURL;
+                    link.download = 'material-minicurso.pdf';
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
                }, 2000);
-               
+
                document.getElementById('manualDownload').addEventListener('click', function(e) {
                     e.preventDefault();
-                    console.log('Download manual iniciado...');
-                    // Código para download manual
+                    const link = document.createElement('a');
+                    link.href = downloadURL;
+                    link.download = 'material-minicurso.pdf';
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
                });
           });
      </script>
+
 </body>
 </html>
