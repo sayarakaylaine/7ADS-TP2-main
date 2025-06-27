@@ -120,18 +120,12 @@
                               </div>
                          </div>
                     </fieldset>
-
-                    <div class="form-row atividades ">
-                    <div class="field-box-first required"><label for="id_atividades"
-                              title="Preenchimento obrigatório">Atividades:</label>
-                         <div class="renderable_select_multiple">
-                              <div class="general-box">
-                                   <div class="primary-info">
-                                        <h4>Arquivos que serão baixados ao confirmar</h4>
+                    <fieldset>
+                    <h4>Arquivos que serão baixados ao confirmar</h4>
                                         <div class="extra-info">
                                              <div class="flex-container boxes texts">
                                                   <div class="box-item">
-                                                       <h5 class="mt-0 text-transform-none"><input type="checkbox"
+                                                       <h5 class="mt-0 text-transform-none required"><input type="checkbox"
                                                                  autocomplete="off" name="atividades" value="1599" title="Selecionar palestra"
                                                                  id="id_atividades_0"><strong
                                                                  class="ps-2"> Material do Minicurso</strong>
@@ -142,20 +136,18 @@
                                                   </div>
                                                   
                                              </div>
-                                        </div>
-                                   </div>
-                              </div>
-
-                              <script>
-                                   $(document).ready(function () {
-                                        $('input[type="checkbox"]').on('change', function () {
-                                             $(this).parent().parent().toggleClass("success");
+                                        </div> 
+                                   <script>
+                                        $(document).ready(function () {
+                                             $('input[type="checkbox"]').on('change', function () {
+                                                  $(this).parent().parent().toggleClass("success");
+                                             });
                                         });
-                                   });
-                              </script>
-                         </div>
-                    </div>
-               </div>
+                                   </script>                  
+
+                    </fieldset>
+
+                    
 
                <div class="submit-row"><input type="submit" name="realizarinscricao_form" class="btn success"
                               value="Confirmar Inscrição e Baixar Arquivos">
