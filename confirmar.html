@@ -121,33 +121,29 @@
                          </div>
                     </fieldset>
                     <fieldset>
-                         <div class="field-box field-box-first required">
-
-                         
-                              <h4>Arquivos que serão baixados ao confirmar</h4>
-                                             <div class="extra-info">
-                                                  <div class="flex-container boxes texts">
-                                                       <div class="box-item">
-                                                            <h5 class="mt-0 text-transform-none required"><input type="checkbox"
-                                                                      autocomplete="off" name="atividades" value="1599" title="Selecionar palestra"
-                                                                      id="id_atividades_0"><strong
-                                                                      class="ps-2"> Material do Minicurso</strong>
-                                                                 
-                                                            </h5>
-                                                            <p class="true">Apresentação sobre Cibersegurança</p>
-                                                            <p>VOCÊ SERIA HACKEADO EM 5 MINUTOS? DESCUBRA AGORA (Minicurso de 3:00h)</p>
-                                                       </div>
-                                                       
+                    <h4>Arquivos que serão baixados ao confirmar</h4>
+                                        <div class="extra-info">
+                                             <div class="flex-container boxes texts">
+                                                  <div class="box-item">
+                                                       <h5 class="mt-0 text-transform-none required"><input type="checkbox"
+                                                                 autocomplete="off" name="atividades" value="1599" title="Selecionar palestra"
+                                                                 id="id_atividades_0"><strong
+                                                                 class="ps-2"> Material do Minicurso</strong>
+                                                            
+                                                       </h5>
+                                                       <p class="true">Apresentação sobre Cibersegurança</p>
+                                                       <p>VOCÊ SERIA HACKEADO EM 5 MINUTOS? DESCUBRA AGORA (Minicurso de 3:00h)</p>
                                                   </div>
-                                             </div> 
-                                        <script>
-                                             $(document).ready(function () {
-                                                  $('input[type="checkbox"]').on('change', function () {
-                                                       $(this).parent().parent().toggleClass("success");
-                                                  });
+                                                  
+                                             </div>
+                                        </div> 
+                                   <script>
+                                        $(document).ready(function () {
+                                             $('input[type="checkbox"]').on('change', function () {
+                                                  $(this).parent().parent().toggleClass("success");
                                              });
-                                        </script>
-                         </div>                  
+                                        });
+                                   </script>                  
 
                     </fieldset>
 
