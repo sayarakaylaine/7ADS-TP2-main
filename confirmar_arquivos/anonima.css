@@ -628,3 +628,32 @@ body.anonima .msg {
         font-size: 2.5rem;
     }
 }
+
+
+/* Adicionado abaixo */
+
+.atividade-wrapper {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background: #f9f9f9;
+    margin-bottom: 15px;
+}
+
+.atividade-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1rem;
+}
+
+@media (max-width: 600px) {
+    .atividade-item {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .atividade-item input[type="checkbox"] {
+        margin-top: 0.3em;
+    }
+}
